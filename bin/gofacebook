@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+'use strict';
+
+// =====================================================
+// CONFIGURATION
+// =====================================================
+
+var logger = require('simlog'),
+    pkg    = require('../package'),
+    input  = process.argv.slice(2),
+    cmd    = require('commander'),
+    gofb   = require('../lib');
+
+cmd
+  .version('GoFacebook v.' + pkg.version, '-v, --version')
+  .usage('fb [options] <term>')
+  .option('-t, --type [type]', 'type search')
+  .parse(process.argv);
+
+// =====================================================
+// CLI
+// =====================================================
+
+if (input.length > 0) {
+    var opts = {
+        type: cmd.type
+    };
+    gofb.search(opts);
+    logger.info('Openning browser... please wait.');
+} else {
+    logger.error('You need to specify a question at least.');
+}

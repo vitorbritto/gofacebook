@@ -1,0 +1,43 @@
+{
+  "name": "gofacebook",
+  "version": "0.1.0",
+  "description": "Search for hashtags, contents in groups or fanpages at Facebook",
+  "main": "index.js",
+  "bin": {
+    "gofb": "bin/gofacebook",
+    "fb": "bin/gofacebook"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://vitorbritto@github.com/vitorbritto/gofacebook.git"
+  },
+  "author": "Vitor Britto <code@vitorbritto.com.br> (http://vitorbritto.com.br/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vitorbritto/gofacebook/issues"
+  },
+  "homepage": "https://github.com/vitorbritto/gofacebook",
+  "keywords": [
+    "facebook",
+    "hashtags",
+    "groups",
+    "search",
+    "references"
+  ],
+  "dependencies": {
+    "commander": "^2.2.0",
+    "open": "0.0.5",
+    "simlog": "^0.1.5"
+  },
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "gulp": "^3.6.2",
+    "gulp-jshint": "^1.5.5",
+    "gulp-mocha": "^0.4.1",
+    "jshint-stylish": "^0.2.0",
+    "mocha": "^1.18.2"
+  }
+}
