@@ -14,7 +14,7 @@ var logger = require('simlog'),
 
 cmd
   .version('GoFacebook v.' + pkg.version, '-v, --version')
-  .usage('fb [options] <term>')
+  .usage('[options] <term>')
   .option('-t, --type [type]', 'type search')
   .parse(process.argv);
 

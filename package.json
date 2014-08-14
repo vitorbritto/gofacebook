@@ -1,6 +1,6 @@
 {
   "name": "gofacebook",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Search for hashtags, contents in groups or fanpages at Facebook",
   "main": "index.js",
   "bin": {

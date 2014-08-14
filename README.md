@@ -31,8 +31,14 @@ $ fb [options] <query>
 ## Example
 
 ```bash
-# fb (-t or --type) [option] [name of group] [query string]
+# Search in groups: fb (-t or --type) [option] [name of group] [query string]
 $ fb -t group frontendbrasil responsive web design
+
+# Search hashtags: fb (-t or --type) [option] [name of hashtag]
+$ fb -t hash mobilefirst
+
+# Search pages: fb (-t or --type) [option] [name of page]
+$ fb -t page javascript
 ```
 
 ## Contribute
